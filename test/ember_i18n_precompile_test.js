@@ -32,6 +32,7 @@ exports.ember_i18n_precompile = {
 
     var actual = grunt.file.read('tmp/en.js');
     var expected = grunt.file.read('test/expected/en.js');
+grunt.file.write('tmp/en2.js', actual);
     test.equal(actual, expected, 'generated file should match expected output.');
 
     test.done();
